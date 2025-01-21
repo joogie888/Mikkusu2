@@ -1,0 +1,135 @@
+:root{
+    --home: url("bg.png")
+    
+}
+
+*{
+    margin: 0; padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+
+}
+
+html{
+    background-color: black;
+    scroll-behavior: smooth;
+    position: sticky;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 5 px 15px rgba(0, 0, 0, 0.06);
+}
+
+.container{
+    margin: auto;
+    width: 900px;
+    max-width: 90vw;
+    margin: auto;
+}
+
+header{
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    background:#4b4a48;
+    padding: 2rem 9%;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+header h5{
+    font-size: 2rem;
+    color:#98FF98;
+    font-weight: bolder;
+    text-align: center;
+    margin-left: 33rem;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-image: var(--home);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: top 25% right 0;
+}
+
+.home h1{
+    font-size: 5rem;
+    text-align: center;
+    margin-top: .5cm;
+    padding-top: 1rem;
+    color:#98FF98;
+}
+
+.home p{
+    color:#98FF98;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 15rem;
+   
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #fcfcfc;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: #4b4a48;
+}
+
+.heading span{
+    color:#98FF98;
+}
+
+.more{
+    background-image: url(bggg.png);
+    width: 100%;
+}
+
+#animelist, #trace, #animesched, #waifu, #animenews {
+    margin-top: 20px;
+    padding: 10px;
+    background: #141414;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color:#98FF98;
+    display: flex;
+}
+
+.anime-item, .trace-item, .myanimelist-item, .waifu-item, .anime-news-item{
+    margin: 0px 0;
+}
+
+.more .buttons{
+    background-color: black;
+    border: 2px solid#98FF98;
+    color:#98FF98;
+    padding: 15px 32px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#fetchanime, #fetchtrace, #fetchsched, #fetchwaifu, #fetchanimenews{
+    background-color: black;
+    border: 2px solid#98FF98;
+    color:#98FF98;
+    padding: 15px 32px;
+    text-align: center;
+    display: flex;
+    font-size: 14px;
+    width: 25%;
+    cursor: pointer;
+}
+
+#fetchanime:hover, #fetchtrace:hover, #fetchsched:hover, #fetchwaifu:hover, #fetchanimenews:hover{
+    scale: 1.2;
+    transition: 0.5s;
+}
